@@ -1,8 +1,9 @@
 ﻿using System;
+using System.Threading.Tasks;
 
 class Program
 {
-    static void Main()
+    static async Task Main()
     {
         for (int i = 0; i < 5; i++)
         {
@@ -20,6 +21,8 @@ class Program
             {
                 Console.WriteLine("La lumière ne fonctionne pas");
             }
+
+            await Task.Delay(500);
         }
     }
 }
