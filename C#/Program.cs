@@ -3,7 +3,13 @@ using System;
 class Program
 {
 
-    static void EffectuerActionAléatoire()
+    static void EffectuerActionAléatoire(
+        TrafficSimulation.Traffic.Vehicule véhicule,
+        TrafficSimulation.Traffic.Intersection intersectionCeder,
+        TrafficSimulation.Traffic.Intersection rondPointIntersection,
+        TrafficSimulation.Traffic.Intersection feuxTricoloresIntersection,
+        Random aléatoire
+    )
     {
         véhicule.EffectuerAction("Approche de l'intersection");
 
